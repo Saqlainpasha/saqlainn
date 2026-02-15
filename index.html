@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saqlain Pasha | IT Support & Data Analytics Professional</title>
+    <meta name="description" content="IT Support Engineer & Data Analyst with expertise in Microsoft 365, Power BI, and System Administration. Seeking opportunities in Dubai.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',      // Deep professional blue
+                        secondary: '#64748b',     // Slate grey
+                        accent: '#3b82f6',        // Bright blue
+                        dark: '#0f172a',          // Dark navy
+                        light: '#f8fafc',         // Light slate
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .skill-bar {
+            transition: width 1.5s ease-out;
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
+        }
+        
+        .timeline-line {
+            background: linear-gradient(to bottom, #3b82f6, #1e3a8a);
+        }
+        
+        .blob {
+            position: absolute;
+            filter: blur(40px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+        
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-700 bg-slate-50 antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="glass-effect shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-shrink-0 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                            SP
+                        </div>
+                        <span class="font-bold text-2xl text-primary tracking-tight">Saqlain<span class="text-secondary">Pasha</span></span>
+                    </div>
+                    
+                    <div class="hidden md:flex space-x-8 items-center">
+                        <a href="#home" class="text-slate-600 hover:text-primary font-medium transition-colors relative group">
+                            Home
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                        </a>
+                        <a href="#about" class="text-slate-600 hover:text-primary font-medium transition-colors relative group">
+                            About
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                        </a>
+                        <a href="#skills" class="text-slate-600 hover:text-primary font-medium transition-colors relative group">
+                            Skills
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                        </a>
+                        <a href="#experience" class="text-slate-600 hover:text-primary font-medium transition-colors relative group">
+                            Experience
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                        </a>
+                        <a href="#projects" class="text-slate-600 hover:text-primary font-medium transition-colors relative group">
+                            Projects
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+                        </a>
+                        <a href="#contact" class="bg-primary text-white px-6 py-2.5 rounded-full font-medium hover:bg-blue-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                            Contact Me
+                        </a>
+                    </div>
+                    
+                    <button class="md:hidden text-slate-600 hover:text-primary" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-slate-200">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block px-3 py-2 text-slate-600 hover:text-primary font-medium">Home</a>
+                <a href="#about" class="block px-3 py-2 text-slate-600 hover:text-primary font-medium">About</a>
+                <a href="#skills" class="block px-3 py-2 text-slate-600 hover:text-primary font-medium">Skills</a>
+                <a href="#experience" class="block px-3 py-2 text-slate-600 hover:text-primary font-medium">Experience</a>
+                <a href="#projects" class="block px-3 py-2 text-slate-600 hover:text-primary font-medium">Projects</a>
+                <a href="#contact" class="block px-3 py-2 text-primary font-bold">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100">
+        <!-- Background Blobs -->
+        <div class="blob bg-blue-300 w-96 h-96 rounded-full top-20 -left-20 animate-float"></div>
+        <div class="blob bg-slate-300 w-80 h-80 rounded-full bottom-20 -right-20 animate-float" style="animation-delay: 2s;"></div>
+        <div class="blob bg-blue-200 w-64 h-64 rounded-full top-1/2 left-1/3 animate-float" style="animation-delay: 4s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 text-center md:text-left animate-fade-in-up">
+                    <div class="inline-block px-4 py-2 bg-blue-100 text-primary rounded-full text-sm font-semibold mb-6 border border-blue-200">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Seeking Opportunities in Dubai, UAE
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-7xl font-bold text-dark mb-6 leading-tight">
+                        Hi, I'm <span class="gradient-text">Saqlain</span>
+                    </h1>
+                    
+                    <div class="text-2xl md:text-3xl text-secondary font-light mb-6 h-16">
+                        <span id="typing-text" class="typing-cursor"></span>
+                    </div>
+                    
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
+                        IT Support Engineer & Data Analyst with 1.7+ years of experience in technical troubleshooting, 
+                        Microsoft 365 administration, and Power BI analytics. Passionate about delivering 
+                        exceptional IT service and data-driven solutions.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                            <i class="fas fa-paper-plane"></i>
+                            Hire Me
+                        </a>
+                        <a href="#projects" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all flex items-center justify-center gap-2">
+                            <i class="fas fa-eye"></i>
+                            View Projects
+                        </a>
+                    </div>
+                    
+                    <div class="mt-12 flex items-center justify-center md:justify-start gap-6 text-slate-400">
+                        <a href="https://linkedin.com/in/saqlain-pashaa" target="_blank" class="hover:text-primary transition-colors text-2xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:saqlainpasha4321@gmail.com" class="hover:text-primary transition-colors text-2xl">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+917996849986" class="hover:text-primary transition-colors text-2xl">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2 flex justify-center animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-primary rounded-3xl transform rotate-6 opacity-20"></div>
+                        <div class="absolute inset-0 bg-blue-400 rounded-3xl transform -rotate-3 opacity-20"></div>
+                        <img src="/mnt/kimi/upload/Image.png" alt="Saqlain Pasha" 
+                             class="relative w-80 h-96 md:w-96 md:h-[500px] object-cover rounded-3xl shadow-2xl border-4 border-white">
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 animate-float">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary">
+                                    <i class="fas fa-award text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-500">Experience</p>
+                                    <p class="font-bold text-dark">1.7+ Years</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 animate-float" style="animation-delay: 1s;">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                                    <i class="fas fa-check-circle text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-500">Available for</p>
+                                    <p class="font-bold text-dark">Immediate Join</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-slate-400 hover:text-primary transition-colors">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="scroll-reveal">
+                    <div class="relative">
+                        <img src="/mnt/kimi/upload/Image (1).jpg" alt="Saqlain Working" 
+                             class="w-full h-[500px] object-cover rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent rounded-3xl opacity-60"></div>
+                        <div class="absolute bottom-8 left-8 text-white">
+                            <p class="text-sm font-medium mb-2">Based in</p>
+                            <p class="text-2xl font-bold">Mangalore, India</p>
+                            <p class="text-blue-200">Open to Relocation in UAE</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-reveal">
+                    <h2 class="text-sm font-bold text-primary tracking-widest uppercase mb-2">About Me</h2>
+                    <h3 class="text-4xl font-bold text-dark mb-6">IT Professional with Data Analytics Expertise</h3>
+                    
+                    <div class="space-y-4 text-slate-600 leading-relaxed mb-8">
+                        <p>
+                            Results-driven IT Support Engineer with hands-on experience in troubleshooting technical issues, 
+                            managing live platform environments, and supporting end-users across diverse industries. 
+                            Currently working with ON24 Process at Unify CX, providing Level 1 technical support and 
+                            ensuring SLA compliance.
+                        </p>
+                        <p>
+                            My unique value proposition lies at the intersection of IT operations and data analytics. 
+                            While maintaining robust IT infrastructure, I leverage Power BI, SQL, and Python to transform 
+                            complex data into actionable insights—skills highly sought after in Dubai's growing tech market.
+                        </p>
+                        <p>
+                            <strong class="text-primary">Why Dubai?</strong> I'm eager to contribute to Dubai's vision as a global tech hub, 
+                            bringing my expertise in Microsoft 365, Active Directory, and data visualization to support 
+                            digital transformation initiatives in the UAE.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="border-l-4 border-primary pl-4">
+                            <p class="text-3xl font-bold text-dark">50+</p>
+                            <p class="text-slate-500 text-sm">Tickets Resolved Daily</p>
+                        </div>
+                        <div class="border-l-4 border-accent pl-4">
+                            <p class="text-3xl font-bold text-dark">99%</p>
+                            <p class="text-slate-500 text-sm">SLA Compliance</p>
+                        </div>
+                        <div class="border-l-4 border-primary pl-4">
+                            <p class="text-3xl font-bold text-dark">3</p>
+                            <p class="text-slate-500 text-sm">Power BI Projects</p>
+                        </div>
+                        <div class="border-l-4 border-accent pl-4">
+                            <p class="text-3xl font-bold text-dark">5</p>
+                            <p class="text-slate-500 text-sm">Certifications</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-4 transition-all">
+                        Let's Discuss Your Requirements <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="blob bg-blue-200 w-96 h-96 rounded-full -top-20 -right-20 opacity-30"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-sm font-bold text-primary tracking-widest uppercase mb-2">Technical Expertise</h2>
+                <h3 class="text-4xl font-bold text-dark mb-4">Skills & Competencies</h3>
+                <p class="text-slate-600 max-w-2xl mx-auto">
+                    Proficient in IT service management, system administration, and data analytics tools 
+                    essential for modern enterprise environments.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- IT Support -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-lift scroll-reveal border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-4">IT Support</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-primary text-sm"></i> Windows 10/11 & macOS</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-primary text-sm"></i> Hardware Troubleshooting</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-primary text-sm"></i> Remote Desktop Support</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-primary text-sm"></i> VPN Configuration</li>
+                    </ul>
+                    <div class="mt-6">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="font-medium">Proficiency</span>
+                            <span class="text-primary font-bold">95%</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full skill-bar" style="width: 0%" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- System Administration -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-lift scroll-reveal border border-slate-100" style="transition-delay: 0.1s;">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-6">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-4">System Administration</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-600 text-sm"></i> Active Directory</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-600 text-sm"></i> User Management</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-600 text-sm"></i> Group Policy (Basic)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-indigo-600 text-sm"></i> Account Lifecycle</li>
+                    </ul>
+                    <div class="mt-6">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="font-medium">Proficiency</span>
+                            <span class="text-indigo-600 font-bold">85%</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div class="bg-indigo-600 h-2 rounded-full skill-bar" style="width: 0%" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Analytics -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-lift scroll-reveal border border-slate-100" style="transition-delay: 0.2s;">
+                    <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-4">Data Analytics</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600 text-sm"></i> Power BI & Dashboards</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600 text-sm"></i> SQL & Data Modeling</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600 text-sm"></i> Python for Analysis</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600 text-sm"></i> Excel Advanced</li>
+                    </ul>
+                    <div class="mt-6">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="font-medium">Proficiency</span>
+                            <span class="text-green-600 font-bold">90%</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div class="bg-green-600 h-2 rounded-full skill-bar" style="width: 0%" data-width="90%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Microsoft 365 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-lift scroll-reveal border border-slate-100">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-4">Microsoft 365</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-blue-600 text-sm"></i> Exchange Online</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-blue-600 text-sm"></i> Teams Administration</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-blue-600 text-sm"></i> Outlook Troubleshooting</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-blue-600 text-sm"></i> SharePoint Basics</li>
+                    </ul>
+                    <div class="mt-6">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="font-medium">Proficiency</span>
+                            <span class="text-blue-600 font-bold">88%</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div class="bg-blue-600 h-2 rounded-full skill-bar" style="width: 0%" data-width="88%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Networking -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-lift scroll-reveal border border-slate-100" style="transition-delay: 0.1s;">
+                    <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 text-2xl mb-6">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-4">Networking</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-600 text-sm"></i> TCP/IP Fundamentals</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-600 text-sm"></i> DNS & DHCP Basics</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-600 text-sm"></i> LAN Troubleshooting</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-purple-600 text-sm"></i> IP Configuration</li>
+                    </ul>
+                    <div class="mt-6">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="font-medium">Proficiency</span>
+                            <span class="text-purple-600 font-bold">80%</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div class="bg-purple-600 h-2 rounded-full skill-bar" style="width: 0%" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ITSM -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-lift scroll-reveal border border-slate-100" style="transition-delay: 0.2s;">
+                    <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 text-2xl mb-6">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-4">IT Service Management</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-orange-600 text-sm"></i> ServiceNow & Jira</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-orange-600 text-sm"></i> ITIL Framework</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-orange-600 text-sm"></i> Incident Management</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-orange-600 text-sm"></i> SLA Management</li>
+                    </ul>
+                    <div class="mt-6">
+                        <div class="flex justify-between text-sm mb-2">
+                            <span class="font-medium">Proficiency</span>
+                            <span class="text-orange-600 font-bold">92%</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div class="bg-orange-600 h-2 rounded-full skill-bar" style="width: 0%" data-width="92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-sm font-bold text-primary tracking-widest uppercase mb-2">Career Journey</h2>
+                <h3 class="text-4xl font-bold text-dark mb-4">Professional Experience</h3>
+                <p class="text-slate-600">Progressive experience in IT support and data analytics roles</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 timeline-line rounded-full"></div>
+                
+                <!-- Experience 1 -->
+                <div class="relative mb-12 scroll-reveal">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right mb-4 md:mb-0 pl-20 md:pl-0">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-100 hover-lift">
+                                <span class="text-primary font-bold text-sm">Sep 2024 – April 2026</span>
+                                <h4 class="text-xl font-bold text-dark mt-2">IT Support Engineer</h4>
+                                <p class="text-secondary font-medium mb-3">Unify CX, ON24 Process • Mangalore</p>
+                                <ul class="text-slate-600 text-sm space-y-2">
+                                    <li>• Level 1 technical support for hardware/software issues</li>
+                                    <li>• Managed tickets via ServiceNow/Zendesk with SLA compliance</li>
+                                    <li>• Supported live webinar events (ON24 platform)</li>
+                                    <li>• Microsoft 365 & Active Directory administration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg z-10"></div>
+                        
+                        <div class="md:w-5/12 pl-20 md:pl-0">
+                            <div class="flex items-center gap-4 md:justify-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-500">Current Role</p>
+                                    <p class="font-bold text-dark">Full-time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="relative mb-12 scroll-reveal">
+                    <div class="md:flex items-center justify-between flex-row-reverse">
+                        <div class="md:w-5/12 md:text-left mb-4 md:mb-0 pl-20 md:pl-0">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-100 hover-lift">
+                                <span class="text-primary font-bold text-sm">Aug 2023 – Sep 2023</span>
+                                <h4 class="text-xl font-bold text-dark mt-2">Data Science Intern</h4>
+                                <p class="text-secondary font-medium mb-3">Zephyr Technologies • Mangalore</p>
+                                <ul class="text-slate-600 text-sm space-y-2">
+                                    <li>• Data collection, cleaning, and preprocessing</li>
+                                    <li>• Created Power BI dashboards and visualizations</li>
+                                    <li>• Data auditing and validation for accuracy</li>
+                                    <li>• <strong>Awarded Best Intern 2023</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-white shadow-lg z-10"></div>
+                        
+                        <div class="md:w-5/12 pl-20 md:pl-0 md:text-right">
+                            <div class="flex items-center gap-4 md:justify-end">
+                                <div>
+                                    <p class="text-sm text-slate-500">Recognition</p>
+                                    <p class="font-bold text-dark">Best Intern Award</p>
+                                </div>
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div class="relative scroll-reveal">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right mb-4 md:mb-0 pl-20 md:pl-0">
+                            <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-100 hover-lift">
+                                <span class="text-primary font-bold text-sm">2020 – 2024</span>
+                                <h4 class="text-xl font-bold text-dark mt-2">Apprenticeship (NATS)</h4>
+                                <p class="text-secondary font-medium mb-3">Glow Touch Technologies</p>
+                                <ul class="text-slate-600 text-sm space-y-2">
+                                    <li>• National Apprenticeship Training Scheme</li>
+                                    <li>• Software development exposure</li>
+                                    <li>• Network management & IT troubleshooting</li>
+                                    <li>• Practical industry experience</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-slate-400 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        
+                        <div class="md:w-5/12 pl-20 md:pl-0">
+                            <div class="flex items-center gap-4 md:justify-start">
+                                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-500">Training</p>
+                                    <p class="font-bold text-dark">NATS Certified</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-sm font-bold text-primary tracking-widest uppercase mb-2">Portfolio</h2>
+                <h3 class="text-4xl font-bold text-dark mb-4">Featured Projects</h3>
+                <p class="text-slate-600 max-w-2xl mx-auto">
+                    Demonstrating expertise in data analytics, IoT solutions, and business intelligence
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift scroll-reveal border border-slate-100 group">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-futbol text-6xl text-white/30 absolute transform group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="relative z-10 text-center text-white p-4">
+                            <i class="fas fa-chart-pie text-4xl mb-2"></i>
+                            <p class="font-bold">Power BI Dashboard</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">Data Analytics</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Sports</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-2">Football Player Performance Analysis</h4>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Interactive Power BI dashboards analyzing player performance metrics, trends, and comparative analytics 
+                            for coaching decisions. Features real-time reporting capabilities.
+                        </p>
+                        <div class="flex items-center gap-4 text-sm text-slate-500 border-t border-slate-100 pt-4">
+                            <span><i class="fas fa-calendar mr-1"></i> 2023</span>
+                            <span><i class="fas fa-tools mr-1"></i> Power BI, Excel</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift scroll-reveal border border-slate-100 group" style="transition-delay: 0.1s;">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-teal-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-trash-alt text-6xl text-white/30 absolute transform group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="relative z-10 text-center text-white p-4">
+                            <i class="fas fa-microchip text-4xl mb-2"></i>
+                            <p class="font-bold">IoT System</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">IoT</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">Python</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-2">Smart Dustbin Monitoring</h4>
+                        <p class="text-slate-600 text-sm mb-4">
+                            IoT-based waste management system with automated lid operation, real-time monitoring, 
+                            and waste type identification using Python. Reduced manual intervention by 50%.
+                        </p>
+                        <div class="flex items-center gap-4 text-sm text-slate-500 border-t border-slate-100 pt-4">
+                            <span><i class="fas fa-calendar mr-1"></i> 2024</span>
+                            <span><i class="fas fa-tools mr-1"></i> Python, Sensors</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift scroll-reveal border border-slate-100 group" style="transition-delay: 0.2s;">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-indigo-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-shopping-cart text-6xl text-white/30 absolute transform group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="relative z-10 text-center text-white p-4">
+                            <i class="fas fa-chart-bar text-4xl mb-2"></i>
+                            <p class="font-bold">Business Intelligence</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-semibold">E-Commerce</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">Power BI</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-dark mb-2">E-Commerce Sales Dashboard</h4>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Comprehensive sales analytics platform visualizing key metrics, customer insights, and trends. 
+                            Optimized data models for efficient reporting and decision-making.
+                        </p>
+                        <div class="flex items-center gap-4 text-sm text-slate-500 border-t border-slate-100 pt-4">
+                            <span><i class="fas fa-calendar mr-1"></i> 2024</span>
+                            <span><i class="fas fa-tools mr-1"></i> Power BI, SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Education -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Certifications -->
+                <div class="scroll-reveal">
+                    <h3 class="text-3xl font-bold text-dark mb-8 flex items-center gap-3">
+                        <i class="fas fa-certificate text-primary"></i>
+                        Certifications
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-primary transition-colors">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-primary flex-shrink-0">
+                                <i class="fab fa-microsoft text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Microsoft Power Platform</h4>
+                                <p class="text-sm text-slate-500">Certified Master Course</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-primary transition-colors">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600 flex-shrink-0">
+                                <i class="fab fa-google text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Google Analytics</h4>
+                                <p class="text-sm text-slate-500">Certified for Beginners</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-primary transition-colors">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 flex-shrink-0">
+                                <i class="fas fa-database text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">SQL Bootcamp</h4>
+                                <p class="text-sm text-slate-500">Lets Upgrade Certification</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-primary transition-colors">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 flex-shrink-0">
+                                <i class="fas fa-network-wired text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">Internet of Things (IoT)</h4>
+                                <p class="text-sm text-slate-500">Technex'23 IIT Bombay</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-4 bg-slate-50 rounded-xl border border-slate-100 hover:border-primary transition-colors">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 flex-shrink-0">
+                                <i class="fas fa-clipboard-check text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark">ITIL Foundation</h4>
+                                <p class="text-sm text-slate-500">IT Service Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Awards -->
+                    <div class="mt-8 p-6 bg-gradient-to-r from-primary to-blue-600 rounded-2xl text-white">
+                        <h4 class="font-bold text-lg mb-4 flex items-center gap-2">
+                            <i class="fas fa-trophy"></i> Awards & Recognition
+                        </h4>
+                        <ul class="space-y-2 text-sm text-blue-100">
+                            <li>• Best Intern Award 2023 - Zephyr Technologies</li>
+                            <li>• Winner - YENYOJANA 23 Mini Project Exhibition</li>
+                            <li>• KSCST Project Recognition</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="scroll-reveal">
+                    <h3 class="text-3xl font-bold text-dark mb-8 flex items-center gap-3">
+                        <i class="fas fa-graduation-cap text-primary"></i>
+                        Education
+                    </h3>
+                    
+                    <div class="relative pl-8 border-l-2 border-primary/20 space-y-8">
+                        <div class="relative">
+                            <div class="absolute -left-[41px] w-6 h-6 bg-primary rounded-full border-4 border-white shadow-md"></div>
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                                <span class="text-primary font-bold text-sm">2020 – 2024</span>
+                                <h4 class="text-xl font-bold text-dark mt-1">Bachelor of Engineering</h4>
+                                <p class="text-secondary font-medium">Information Science</p>
+                                <p class="text-slate-500 text-sm mt-2">Vishweshwaraiah Technological University, Karnataka</p>
+                                <div class="mt-4 flex gap-2">
+                                    <span class="px-3 py-1 bg-white rounded-full text-xs border border-slate-200">Database Systems</span>
+                                    <span class="px-3 py-1 bg-white rounded-full text-xs border border-slate-200">Networking</span>
+                                    <span class="px-3 py-1 bg-white rounded-full text-xs border border-slate-200">Programming</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="relative">
+                            <div class="absolute -left-[41px] w-6 h-6 bg-slate-300 rounded-full border-4 border-white shadow-md"></div>
+                            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                                <span class="text-primary font-bold text-sm">Additional</span>
+                                <h4 class="text-xl font-bold text-dark mt-1">National Apprenticeship</h4>
+                                <p class="text-secondary font-medium">Information Technology</p>
+                                <p class="text-slate-500 text-sm mt-2">Glow Touch Technologies Pvt Ltd</p>
+                                <p class="text-slate-600 text-sm mt-2">Practical training in software development, network management, and IT troubleshooting</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Languages -->
+                    <div class="mt-8">
+                        <h4 class="font-bold text-dark mb-4">Languages</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-blue-50 text-primary rounded-lg font-medium border border-blue-100">English</span>
+                            <span class="px-4 py-2 bg-blue-50 text-primary rounded-lg font-medium border border-blue-100">Hindi</span>
+                            <span class="px-4 py-2 bg-blue-50 text-primary rounded-lg font-medium border border-blue-100">Kannada</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mt-2">Multilingual professional - Advantage for UAE's diverse workplace</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-purple-900/20"></div>
+        <div class="blob bg-blue-500 w-96 h-96 rounded-full top-0 left-0 opacity-10"></div>
+        <div class="blob bg-purple-500 w-80 h-80 rounded-full bottom-0 right-0 opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="scroll-reveal">
+                    <h2 class="text-sm font-bold text-blue-400 tracking-widest uppercase mb-2">Get In Touch</h2>
+                    <h3 class="text-4xl font-bold mb-6">Let's Work Together</h3>
+                    <p class="text-slate-300 mb-8 leading-relaxed">
+                        Currently seeking IT Support and System Administration opportunities in Dubai, UAE. 
+                        Available for immediate relocation and excited to contribute to your organization's 
+                        digital transformation journey.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 text-xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-400">Email</p>
+                                <a href="mailto:saqlainpasha4321@gmail.com" class="text-lg font-semibold hover:text-blue-400 transition-colors">
+                                    saqlainpasha4321@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 text-xl">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-400">Phone</p>
+                                <a href="tel:+917996849986" class="text-lg font-semibold hover:text-blue-400 transition-colors">
+                                    +91 799 684 9986
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 text-xl">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-400">LinkedIn</p>
+                                <a href="https://linkedin.com/in/saqlain-pashaa" target="_blank" class="text-lg font-semibold hover:text-blue-400 transition-colors">
+                                    linkedin.com/in/saqlain-pashaa
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 text-xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-slate-400">Location</p>
+                                <p class="text-lg font-semibold">Mangalore, India (Open to UAE Relocation)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-reveal">
+                    <div class="bg-white/5 backdrop-blur-lg p-8 rounded-3xl border border-white/10">
+                        <h4 class="text-2xl font-bold mb-6">Send a Message</h4>
+                        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for your message! I will get back to you soon.');">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm text-slate-400 mb-2">Name</label>
+                                    <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:border-blue-400 text-white placeholder-slate-500" placeholder="Your Name">
+                                </div>
+                                <div>
+                                    <label class="block text-sm text-slate-400 mb-2">Email</label>
+                                    <input type="email" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:border-blue-400 text-white placeholder-slate-500" placeholder="your@email.com">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm text-slate-400 mb-2">Subject</label>
+                                <input type="text" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:border-blue-400 text-white placeholder-slate-500" placeholder="Job Opportunity / Collaboration">
+                            </div>
+                            <div>
+                                <label class="block text-sm text-slate-400 mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:outline-none focus:border-blue-400 text-white placeholder-slate-500 resize-none" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-blue-600 text-white font-semibold py-4 rounded-xl transition-all transform hover:-translate-y-1 shadow-lg">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                    SP
+                </div>
+                <span class="font-semibold text-white">Saqlain Pasha</span>
+            </div>
+            
+            <p class="text-sm">© 2025 Saqlain Pasha. All rights reserved.</p>
+            
+            <div class="flex gap-4">
+                <a href="https://linkedin.com/in/saqlain-pashaa" target="_blank" class="hover:text-white transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="mailto:saqlainpasha4321@gmail.com" class="hover:text-white transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="tel:+917996849986" class="hover:text-white transition-colors">
+                    <i class="fas fa-phone text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+        
+        // Typing Effect
+        const texts = ["IT Support Engineer", "Data Analyst", "System Administrator", "Power BI Developer"];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typing-text');
+        
+        function type() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            let typeSpeed = isDeleting ? 50 : 100;
+            
+            if (!isDeleting && charIndex === currentText.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                typeSpeed = 500;
+            }
+            
+            setTimeout(type, typeSpeed);
+        }
+        
+        // Start typing effect
+        type();
+        
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    
+                    // Animate skill bars if present
+                    const skillBars = entry.target.querySelectorAll('.skill-bar');
+                    skillBars.forEach(bar => {
+                        const width = bar.getAttribute('data-width');
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 200);
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+        
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+        
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
